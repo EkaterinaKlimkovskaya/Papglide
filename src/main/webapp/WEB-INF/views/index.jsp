@@ -46,7 +46,12 @@
         </div><!-- .subheader-->
 
         <main class="content">
-
+			<div class="welcome">
+				<p align="center" class="welcome_message">WELCOME TO POPGLIDE. NOW YOU WRITE AND VOTE THE NEWS</p>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d55207137.65703199!2d10.638391375903186!3d32.376910689455954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1428658734571" frameborder="0" height="100%" width="100%" class="map">
+				Unfortunately your browser doesn't support floating frames. 
+			</iframe>
         </main><!-- .content -->
 
     </div><!-- .wrapper -->
