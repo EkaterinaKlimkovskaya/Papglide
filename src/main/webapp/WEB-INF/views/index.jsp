@@ -52,12 +52,42 @@
 			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d55207137.65703199!2d10.638391375903186!3d32.376910689455954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1428658734571" frameborder="0" height="100%" width="100%" class="map">
 				Unfortunately your browser doesn't support floating frames. 
 			</iframe>
+            <div>
+                <div class="toprated_line"></div>
+                <div class="categories_line">
+                    <div class="categories">
+                        <button class="category_all">All</button>
+                        <button class="category_world">World</button>
+                        <button class="category_war">War</button>
+                        <button class="category_politics">Politics</button>
+                        <button class="category_business">Business</button>
+                        <button class="category_science">Science</button>
+                        <button class="category_culture">Culture</button>
+                        <button class="category_sport">Sport</button>
+                        <button class="category_entertain">Entertain.</button>
+                        <button class="category_environment">Environment</button>
+                        <button class="category_travel">Travel</button>
+                    </div>
+                </div>
+                <div class="day_line"></div>
+                <div class="thumbnails_line"></div>
+            </div>
         </main><!-- .content -->
 
     </div><!-- .wrapper -->
 
     <footer class="footer">
-
+        <div class="subfooter"></div>
+        <a href="#" class="papglide_emblem">
+            <img src="/images/papglide_text.png" class="logo_nest">
+        </a>
+        <div class="footer_tabs">
+            <a href="#" class="footer_tab">Copyright</a>
+            <a href="#" class="footer_tab">Terms</a>
+            <a href="#" class="footer_tab">Developers</a>
+            <a href="#" class="footer_tab">Privacy</a>
+        </div>
+        <button class="language_button">English</button>
     </footer><!-- .footer -->
 </body>
 </html>

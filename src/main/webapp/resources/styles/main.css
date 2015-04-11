@@ -2,8 +2,12 @@ body {
     margin: 0;
 }
 
+img {
+    border: none;
+}
+
 .wrapper {
-    height: 100%;
+
 }
 
 /* Header
@@ -48,6 +52,9 @@ body {
 .subheader {
     height: 35px;
     background: #433F40;
+    background: -webkit-linear-gradient(to top, #433F40, #47474A);
+    background: -o-linear-gradient(to top, #433F40, #47474A);
+    background: -moz-linear-gradient(to top, #433F40, #47474A);
     background: linear-gradient(to top, #433F40, #47474A);
 }
 
@@ -119,6 +126,7 @@ body {
 	z-index: 5;
 	width: 100%; 
 	height: 35px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
 	opacity: 0.25;
 	background: #000000;
 }
@@ -137,11 +145,202 @@ body {
 	font-stretch: ultra-condensed;
 }
 
+.toprated_line {
+    height: 100px;
+    background: #4C4849;
+}
+
+.categories_line {
+    height: 50px;
+    border-top: 1px solid #000000;
+    background: #393536;
+    background: -webkit-linear-gradient(to top, #393536, #282526);
+    background: -o-linear-gradient(to top, #393536, #282526);
+    background: -moz-linear-gradient(to top, #393536, #282526);
+    background: linear-gradient(to top, #393536, #282526);
+}
+
+.categories {
+    width: 913px;
+    margin: 0 auto;
+}
+
+.category_all, .category_world, .category_war, .category_politics, .category_business,
+.category_science, .category_culture, .category_sport, .category_entertain,
+.category_environment, .category_travel {
+    border: none;
+    border-left: 1px solid #B3B3B3;
+    float: left;
+    height: 50px;
+    width: 83px;
+    color: #D5D5D5;
+    font-family: Calibri;
+    font-size: 14px;
+}
+
+.category_all {
+    background: #696364;
+    background: -webkit-radial-gradient(farthest-corner, #696364, #37363A);
+    background: -moz-radial-gradient(farthest-corner, #696364, #37363A);
+    background: -ms-radial-gradient(farthest-corner, #696364, #37363A);
+    background: -o-radial-gradient(farthest-corner, #696364, #37363A);
+    background: radial-gradient(farthest-corner, #696364, #37363A);
+}
+
+.category_world {
+    background: #E56F36;
+    background: -webkit-radial-gradient(farthest-corner, #E56F36, #9D4114);
+    background: -moz-radial-gradient(farthest-corner, #E56F36, #9D4114);
+    background: -ms-radial-gradient(farthest-corner, #E56F36, #9D4114);
+    background: -o-radial-gradient(farthest-corner, #E56F36, #9D4114);
+    background: radial-gradient(farthest-corner, #E56F36, #9D4114);
+}
+
+.category_war {
+    background: #AF453F;
+    background: -webkit-radial-gradient(farthest-corner, #AF453F, #902C26);
+    background: -moz-radial-gradient(farthest-corner, #AF453F, #902C26);
+    background: -ms-radial-gradient(farthest-corner, #AF453F, #902C26);
+    background: -o-radial-gradient(farthest-corner, #AF453F, #902C26);
+    background: radial-gradient(farthest-corner, #AF453F, #902C26);
+}
+
+.category_politics {
+    background: #1C4F6F;
+    background: -webkit-radial-gradient(farthest-corner, #1C4F6F, #032C47);
+    background: -moz-radial-gradient(farthest-corner, #1C4F6F, #032C47);
+    background: -ms-radial-gradient(farthest-corner, #1C4F6F, #032C47);
+    background: -o-radial-gradient(farthest-corner, #1C4F6F, #032C47);
+    background: radial-gradient(farthest-corner, #1C4F6F, #032C47);
+}
+
+.category_business {
+    background: #E2A24A;
+    background: -webkit-radial-gradient(farthest-corner, #E2A24A, #976623);
+    background: -moz-radial-gradient(farthest-corner, #E2A24A, #976623);
+    background: -ms-radial-gradient(farthest-corner, #E2A24A, #976623);
+    background: -o-radial-gradient(farthest-corner, #E2A24A, #976623);
+    background: radial-gradient(farthest-corner, #E2A24A, #976623);
+}
+
+.category_science {
+    background: #5D5B4E;
+    background: -webkit-radial-gradient(farthest-corner, #5D5B4E, #363728);
+    background: -moz-radial-gradient(farthest-corner, #5D5B4E, #363728);
+    background: -ms-radial-gradient(farthest-corner, #5D5B4E, #363728);
+    background: -o-radial-gradient(farthest-corner, #5D5B4E, #363728);
+    background: radial-gradient(farthest-corner, #5D5B4E, #363728);
+}
+
+.category_culture {
+    background: #663C3A;
+    background: -webkit-radial-gradient(farthest-corner, #663C3A, #3D1A19);
+    background: -moz-radial-gradient(farthest-corner, #663C3A, #3D1A19);
+    background: -ms-radial-gradient(farthest-corner, #663C3A, #3D1A19);
+    background: -o-radial-gradient(farthest-corner, #663C3A, #3D1A19);
+    background: radial-gradient(farthest-corner, #663C3A, #3D1A19);
+}
+
+.category_sport {
+    background: #AC817A;
+    background: -webkit-radial-gradient(farthest-corner, #AC817A, #704F4A);
+    background: -moz-radial-gradient(farthest-corner, #AC817A, #704F4A);
+    background: -ms-radial-gradient(farthest-corner, #AC817A, #704F4A);
+    background: -o-radial-gradient(farthest-corner, #AC817A, #704F4A);
+    background: radial-gradient(farthest-corner, #AC817A, #704F4A);
+}
+
+.category_entertain {
+    background: #865170;
+    background: -webkit-radial-gradient(farthest-corner, #865170, #50283F);
+    background: -moz-radial-gradient(farthest-corner, #865170, #50283F);
+    background: -ms-radial-gradient(farthest-corner, #865170, #50283F);
+    background: -o-radial-gradient(farthest-corner, #865170, #50283F);
+    background: radial-gradient(farthest-corner, #865170, #50283F);
+}
+
+.category_environment {
+    background: #689E40;
+    background: -webkit-radial-gradient(farthest-corner, #689E40, #3D6421);
+    background: -moz-radial-gradient(farthest-corner, #689E40, #3D6421);
+    background: -ms-radial-gradient(farthest-corner, #689E40, #3D6421);
+    background: -o-radial-gradient(farthest-corner, #689E40, #3D6421);
+    background: radial-gradient(farthest-corner, #689E40, #3D6421);
+}
+
+.category_travel {
+    border-right: 1px solid #B3B3B3;
+    background: #A59F89;
+    background: -webkit-radial-gradient(farthest-corner, #A59F89, #726D5A);
+    background: -moz-radial-gradient(farthest-corner, #A59F89, #726D5A);
+    background: -ms-radial-gradient(farthest-corner, #A59F89, #726D5A);
+    background: -o-radial-gradient(farthest-corner, #A59F89, #726D5A);
+    background: radial-gradient(farthest-corner, #A59F89, #726D5A);
+}
+
+.day_line {
+    height: 140px;
+    background: #4C4849;
+    border-top: 1px solid #B3B3B3;
+}
+
+.thumbnails_line {
+    height: 140px;
+    border-top: 1px solid #000000;
+    background: #393536;
+    background: -webkit-linear-gradient(to top, #393536, #282526);
+    background: -o-linear-gradient(to top, #393536, #282526);
+    background: -moz-linear-gradient(to top, #393536, #282526);
+    background: linear-gradient(to top, #393536, #282526);
+}
+
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-    margin: -100px auto 0;
-    height: 100px;
-    background: #FFFFFF;
+    /*margin: -140px auto 0;*/
+    height: 140px;
+    background: #4C4849;
     position: relative;
+}
+
+.subfooter {
+    height: 55px;
+    border-bottom: 1px solid #9A937A;
+    border-top: 1px solid #B3B3B3;
+    border-bottom-style: dashed;
+}
+
+.logo_nest {
+    margin-top: 30px;
+}
+
+.footer_tabs {
+    width: 360px;
+    margin: 30px auto;
+}
+
+.footer_tab {
+    color: #2B2831;
+    font-family: Calibri;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.language_button {
+    float: right;
+    margin-top: -50px;
+    margin-right: 130px;
+    background-color: #393536;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    font-family: Calibri;
+    font-size: 15px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
 }
