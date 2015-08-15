@@ -30,7 +30,10 @@
         <main class="content">
 			<div class="welcome">
                 <div class="latest_news">LATEST  NEWS</div>
+                <div id="last_news"></div>
             </div>
+            <a id="new_glider_map" href="#" class="new_glider_map"></a>
+            <a id="go_down_map" href="#" class="go_down_map"></a>
             <div id="map-canvas" class="map"></div>
             <div>
                 <div class="toprated_line"></div>
