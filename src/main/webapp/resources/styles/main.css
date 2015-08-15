@@ -13,91 +13,50 @@ img {
 /* Header
 -----------------------------------------------------------------------------*/
 .header {
-    height: 60px;
-    background: #393536;
-    border-bottom: 2px #000000 solid;
+    height: 50px;
+    background: #666666;
 }
 
 .papglide_emblem {
-    margin-left: 130px;
+    margin-left: 160px;
+    margin-top: 7px;
+    margin-right: 10px;
     float: left;
-}
-
-.logo {
-    margin-top: 19px;
+    font-family: Harabara;
+    font-size: 30px;
+    letter-spacing: 1.26px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 45px;
+    padding-bottom: 5px;
+    background: url(/images/main_icon.png) no-repeat;
 }
 
 .header_tabs {
     float: left;
     margin-left: 35px;
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
-.header_tab {
-    color: #4DA5DB;
-    font-family: Calibri;
-    font-size: 16px;
+.header_buttons {
     text-decoration: none;
-    margin-left: 15px;
+    padding-left: 35px;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    font-family : Cantarell;
+    font-weight : bold;
+    font-size : 12px;
+    letter-spacing : -0.96px;
+    color : #F2F2F2;
 }
 
-.header_text {
-    float: right;
-    width: 225px;
-    height: 57px;
-    margin-right: 130px;
-    resize: none;
+#new_glider {
+    background: url(/images/new_glider.png) no-repeat;
 }
 
-.subheader {
-    height: 35px;
-    background: #433F40;
-    background: -webkit-linear-gradient(to top, #433F40, #47474A);
-    background: -o-linear-gradient(to top, #433F40, #47474A);
-    background: -moz-linear-gradient(to top, #433F40, #47474A);
-    background: linear-gradient(to top, #433F40, #47474A);
-}
-
-.new_glider, .subheader_tab {
-    float: left;
-    text-decoration: none;
-    color: #FFFFFF;
-    font-family: Calibri;
-    padding-left: 25px;
-}
-
-.new_glider {
-    background: url(/images/papglide_icon.png) no-repeat;
-    margin-left: 130px;
-    font-size: 14px;
-    margin-top: 8px;
-}
-
-.subheader_tab {
-    background: url(/images/papglide_icon.png) no-repeat;
-    margin-left: 20px;
-    font-size: 12px;
-    margin-top: 9px;
-    height: 16px; /*size of icon*/
-}
-
-.to_home {
-    margin-left: 20px;
-    margin-top: 9px;
-}
-
-.subheader_filter_tabs {
-    float: right;
-    margin-right: 130px;
-    margin-top: 4px;
-}
-
-.subheader_filter_tab {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-family: Calibri;
-    font-size: 12px;
-    margin-left: 20px;
+#login {
+    background: url(/images/login.png) no-repeat;
+    margin-left: 40px;
 }
 
 .search_form {
@@ -105,14 +64,17 @@ img {
 }
 
 .search_field {
-	border: 0;
-    margin-left: 40px;
-    height: 27px;
-    width: 185px;
-	border-radius: 5px; 
-	-webkit-border-radius: 6px; 
-	-moz-border-radius: 6px; 
-	-khtml-border-radius: 6px;
+    float: right;
+    border: 0;
+    margin-right: 160px;
+    margin-top: 8px;
+    height: 33px;
+    width: 300px;
+    background: #999999 url(/images/search.png) no-repeat 268px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
 }
 
 /* Middle
@@ -126,9 +88,18 @@ img {
 	z-index: 5;
 	width: 100%; 
 	height: 35px;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
-	opacity: 0.25;
-	background: #000000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	opacity: 0.75;
+	background: #FFFFFF;
+}
+
+.latest_news {
+    font-family : Bebas;
+    font-size : 16px;
+    color : #0099CC;
+    left: 50%;
+    position: absolute;
+    margin-top: 6px;
 }
 
 .map {
@@ -136,14 +107,6 @@ img {
 	width: 100%;
 	height: 100%;
     background-color: #CCC;
-}
-
-.welcome_message {
-	color: #FFFFFF;
-	font-family: sans-serif;
-	font-size: 22px;
-	margin-top: 5px;
-	font-stretch: ultra-condensed;
 }
 
 .toprated_line {
