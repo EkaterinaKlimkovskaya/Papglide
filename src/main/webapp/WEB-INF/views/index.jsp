@@ -35,42 +35,67 @@
             <a id="new_glider_map" href="#" class="new_glider_map"></a>
             <a id="go_down_map" href="#" class="go_down_map"></a>
             <div id="map-canvas" class="map"></div>
-            <div>
-                <div class="toprated_line"></div>
-                <div class="categories_line">
-                    <div class="categories">
-                        <button class="category_all">All</button>
-                        <button class="category_world">World</button>
-                        <button class="category_war">War</button>
-                        <button class="category_politics">Politics</button>
-                        <button class="category_business">Business</button>
-                        <button class="category_science">Science</button>
-                        <button class="category_culture">Culture</button>
-                        <button class="category_sport">Sport</button>
-                        <button class="category_entertain">Entertain.</button>
-                        <button class="category_environment">Environment</button>
-                        <button class="category_travel">Travel</button>
-                    </div>
-                </div>
-                <div class="day_line"></div>
-                <div class="thumbnails_line"></div>
-            </div>
         </main><!-- .content -->
 
     </div><!-- .wrapper -->
 
     <footer class="footer">
-        <div class="subfooter"></div>
-        <a href="#" class="papglide_emblem">
-            <img src="/images/papglide_text.png" class="logo_nest">
-        </a>
-        <div class="footer_tabs">
-            <a href="#" class="footer_tab">Copyright</a>
-            <a href="#" class="footer_tab">Terms</a>
-            <a href="#" class="footer_tab">Developers</a>
-            <a href="#" class="footer_tab">Privacy</a>
+        <div id="top_news_label" class="bottom_labels">Top News</div>
+        <div class="toprated_line"></div>
+        <div class="bottom_advertisement"></div>
+        <div class="bottom_labels">Categories</div>
+        <table class="categories_line">
+            <tr>
+                <td><a href="#" id="category_all"></a></td>
+                <td><a href="#" id="category_world"></a></td>
+                <td><a href="#" id="category_war"></a></td>
+                <td><a href="#" id="category_politics"></a></td>
+                <td><a href="#" id="category_business"></a></td>
+                <td><a href="#" id="category_science"></a></td>
+                <td><a href="#" id="category_environment"></a></td>
+                <td><a href="#" id="category_sport"></a></td>
+                <td><a href="#" id="category_entertainment"></a></td>
+                <td><a href="#" id="category_culture"></a></td>
+                <td><a href="#" id="category_travel"></a></td>
+            </tr>
+            <tr>
+                <td class="category">All</td>
+                <td class="category">World</td>
+                <td class="category">War</td>
+                <td class="category">Politics</td>
+                <td class="category">Business</td>
+                <td class="category">Science</td>
+                <td class="category">Environment</td>
+                <td class="category">Sport</td>
+                <td class="category">Entertainment</td>
+                <td class="category">Culture</td>
+                <td class="category">Travel</td>
+            </tr>
+        </table>
+        <div class="bottom_labels">Type</div>
+        <div class="type_line">
+            <a href="#" id="user_type" class="type_option">Users</a>
+            <a href="#" id="newspaper_type" class="type_option">Newspapers</a>
+            <a href="#" id="company_type" class="type_option">Companies</a>
         </div>
-        <button class="language_button">English</button>
+        <div class="bottom_labels">Rating</div>
+        <div class="rating_line"></div>
+        <div class="bottom_labels">Timeline</div>
+        <div class="timeline"></div>
+        <div class="bottom_labels">Latest News</div>
+        <div class="latest_news_line"></div>
+
+        <div class="subfooter">
+            <a href="#" class="papglide_footer">Papglide</a>
+            <a href="#" class="birds_nest_footer">Bird's nest</a>
+            <a href="#" class="footer_tab">What is Papglide?</a>
+            <a href="#" class="footer_tab">Terms and conditions</a>
+            <a href="#" class="footer_tab">Credits</a>
+            <a href="#" class="footer_tab">Advertisement</a>
+            <button class="language_button">English</button>
+        </div>
+        <div class="use_of_cookies">Use of cookies: We use cookie to improve our user experience. Cookies are small files which are stored on your computer and designed to identify our users.By entering in this website you are agree to our use of cookies, unless you decide to disable them.</div>
     </footer><!-- .footer -->
+
 </body>
 </html>
