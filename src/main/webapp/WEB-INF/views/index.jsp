@@ -7,10 +7,12 @@
     <meta charset="utf-8">
 	<link rel="shortcut icon" href="/images/papglide_icon.png" type="image/png">
     <link rel="stylesheet" href="styles/main.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="styles/popups.css" type="text/css" media="screen">
     <script type="text/javascript" src="scripts/jquery-1.6.min.js"></script>
     <script type="text/javascript" src="scripts/jquery.validate.min.js"></script>
     <script type="text/javascript" src="scripts/angular.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/popups.js"></script>
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
@@ -19,7 +21,7 @@
         <header class="header">
             <a id="logo" href="#" class="papglide_emblem" alt="Go to homepage">Papglide</a>
             <div class="header_tabs">
-                <a id="new_glider" href="#" class="header_buttons">NEW GLIDER</a>
+                <a id="new_glider" href="javascript:showPopup('#article-popup-background')" class="header_buttons">NEW GLIDER</a>
                 <a id="login" href="#" class="header_buttons">LOGIN</a>
             </div>
             <form class="search_form">
@@ -32,9 +34,10 @@
                 <div class="latest_news">LATEST  NEWS</div>
                 <div id="last_news"></div>
             </div>
-            <a id="new_glider_map" href="#" class="new_glider_map"></a>
-            <a id="go_down_map" href="#" class="go_down_map"></a>
+            <a id="new_glider_map" href="javascript:showPopup('#article-popup-background')" class="new_glider_map"></a>
+            <a id="go_down_map" href="#tools" class="go_down_map"></a>
             <div id="map-canvas" class="map"></div>
+            <a name="tools" class="tools"></a>
         </main><!-- .content -->
 
     </div><!-- .wrapper -->
@@ -96,6 +99,42 @@
         </div>
         <div class="use_of_cookies">Use of cookies: We use cookie to improve our user experience. Cookies are small files which are stored on your computer and designed to identify our users.By entering in this website you are agree to our use of cookies, unless you decide to disable them.</div>
     </footer><!-- .footer -->
+
+    <%--popups--%>
+    <div id="article-popup-background" class="b-popup-background">
+        <div id="article-popup-content" class="b-popup-content">
+            <table>
+                <tr>
+                    <td class="article_first">
+                        <a href="#" class="picture_frame"></a>
+                        <a href="#" class="choose_category_article_popup">Choose a category</a>
+                        <div id="popup_categories" class="popup_categories">
+                            <a id="p-world" class="popup_category" href="#">World</a>
+                            <a id="p-war" class="popup_category" href="#">War</a>
+                            <a id="p-politics" class="popup_category" href="#">Politics</a>
+                            <a id="p-business" class="popup_category" href="#">Business</a>
+                            <a id="p-science" class="popup_category" href="#">Science</a>
+                            <a id="p-environment" class="popup_category" href="#">Environment</a>
+                            <a id="p-sport" class="popup_category" href="#">Sport</a>
+                            <a id="p-entertainment" class="popup_category" href="#">Entertainment</a>
+                            <a id="p-culture" class="popup_category" href="#">Culture</a>
+                            <a id="p-travel" class="popup_category" href="#">Travel</a>
+                        </div>
+                    </td>
+                    <td class="article_second">
+                        <input id="article_title" class="article_title" type="text" placeholder="Title">
+                        <input id="article_location" class="article_location" type="text" placeholder="Write a location">
+                        <textarea id="article_text" class="article_text" placeholder="Write something"></textarea>
+                    </td>
+                    <td class="article_third">
+                        <a class="article_help" href="#">Help</a>
+                        <button class="article_send" href="#">SEND</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <%--/popups--%>
 
 </body>
 </html>
