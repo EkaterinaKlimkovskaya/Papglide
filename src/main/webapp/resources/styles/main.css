@@ -33,7 +33,7 @@ img {
     text-decoration: none;
     padding-left: 45px;
     padding-bottom: 5px;
-    background: url(/images/main_icon.png) no-repeat;
+    background: url(../images/main_icon.png) no-repeat;
 }
 
 .header_tabs {
@@ -55,11 +55,11 @@ img {
 }
 
 #new_glider {
-    background: url(/images/new_glider.png) no-repeat;
+    background: url(../images/new_glider.png) no-repeat;
 }
 
 #login {
-    background: url(/images/login.png) no-repeat;
+    background: url(../images/login.png) no-repeat;
     margin-left: 40px;
 }
 
@@ -74,7 +74,7 @@ img {
     margin-top: 8px;
     height: 33px;
     width: 300px;
-    background: #999999 url(/images/search.png) no-repeat 268px;
+    background: #999999 url(../images/search.png) no-repeat 268px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -116,7 +116,7 @@ img {
 }
 
 .new_glider_map {
-    background: url(/images/big_new_glider.png) no-repeat;
+    background: url(../images/big_new_glider.png) no-repeat;
     position: absolute;
     z-index: 10;
     width: 55px;
@@ -126,7 +126,7 @@ img {
 }
 
 .go_down_map {
-    background: url(/images/go_down.png) no-repeat;
+    background: url(../images/go_down.png) no-repeat;
     position: absolute;
     z-index: 10;
     width: 55px;
@@ -202,58 +202,58 @@ img {
 }
 
 #category_all {
-    background: url(/images/all_big.png) no-repeat;
+    background: url(../images/all_big.png) no-repeat;
     /*padding: 70px 40px 36px 17px;*/
     /*margin-left: 8px;*/
 }
 
 #category_world {
-    background: url(/images/world_big.png) no-repeat;
+    background: url(../images/world_big.png) no-repeat;
     /*margin-left: 97px;*/
 }
 
 #category_war {
-    background: url(/images/war_big.png) no-repeat;
+    background: url(../images/war_big.png) no-repeat;
     /*margin-left: 186px;*/
 }
 
 #category_politics {
-    background: url(/images/politics_big.png) no-repeat;
+    background: url(../images/politics_big.png) no-repeat;
     /*margin-left: 275px;*/
 }
 
 #category_business {
-    background: url(/images/business_big.png) no-repeat;
+    background: url(../images/business_big.png) no-repeat;
     /*margin-left: 364px;*/
 }
 
 #category_science {
-    background: url(/images/science_big.png) no-repeat;
+    background: url(../images/science_big.png) no-repeat;
     /*margin-left: 453px;*/
 }
 
 #category_environment {
-    background: url(/images/environment_big.png) no-repeat;
+    background: url(../images/environment_big.png) no-repeat;
     /*margin-left: 542px;*/
 }
 
 #category_sport {
-    background: url(/images/sport_big.png) no-repeat;
+    background: url(../images/sport_big.png) no-repeat;
     /*margin-left: 631px;*/
 }
 
 #category_entertainment {
-    background: url(/images/entertainment_big.png) no-repeat;
+    background: url(../images/entertainment_big.png) no-repeat;
     /*margin-left: 720px;*/
 }
 
 #category_culture {
-    background: url(/images/culture_big.png) no-repeat;
+    background: url(../images/culture_big.png) no-repeat;
     /*margin-left: 809px;*/
 }
 
 #category_travel {
-    background: url(/images/travel_big.png) no-repeat;
+    background: url(../images/travel_big.png) no-repeat;
     /*margin-left: 898px;*/
 }
 
@@ -273,17 +273,17 @@ img {
 }
 
 #user_type {
-    background: url(/images/users.png) no-repeat;
+    background: url(../images/users.png) no-repeat;
     margin-right: 80px;
 }
 
 #newspaper_type {
-    background: url(/images/newspapers.png) no-repeat;
+    background: url(../images/newspapers.png) no-repeat;
     margin-right: 80px;
 }
 
 #company_type {
-    background: url(/images/companies.png) no-repeat;
+    background: url(../images/companies.png) no-repeat;
 }
 
 .rating_line {
@@ -328,7 +328,7 @@ img {
     font-size : 15px;
     letter-spacing : 0.63px;
     color : #808080;
-    background: url(/images/birds_nest.png) no-repeat;
+    background: url(../images/birds_nest.png) no-repeat;
     padding-left: 30px;
     padding-bottom: 10px;
     padding-top: 5px;

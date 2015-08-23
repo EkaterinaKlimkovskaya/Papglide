@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/popups.css" type="text/css" media="screen">
     <script type="text/javascript" src="scripts/jquery-1.6.min.js"></script>
     <script type="text/javascript" src="scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.simpleexpand.min.js"></script>
     <script type="text/javascript" src="scripts/angular.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
     <script type="text/javascript" src="scripts/popups.js"></script>
@@ -103,35 +104,46 @@
     <%--popups--%>
     <div id="article-popup-background" class="b-popup-background">
         <div id="article-popup-content" class="b-popup-content">
-            <table>
-                <tr>
-                    <td class="article_first">
-                        <a href="#" class="picture_frame"></a>
-                        <a href="#" class="choose_category_article_popup">Choose a category</a>
-                        <div id="popup_categories" class="popup_categories">
-                            <a id="p-world" class="popup_category" href="#">World</a>
-                            <a id="p-war" class="popup_category" href="#">War</a>
-                            <a id="p-politics" class="popup_category" href="#">Politics</a>
-                            <a id="p-business" class="popup_category" href="#">Business</a>
-                            <a id="p-science" class="popup_category" href="#">Science</a>
-                            <a id="p-environment" class="popup_category" href="#">Environment</a>
-                            <a id="p-sport" class="popup_category" href="#">Sport</a>
-                            <a id="p-entertainment" class="popup_category" href="#">Entertainment</a>
-                            <a id="p-culture" class="popup_category" href="#">Culture</a>
-                            <a id="p-travel" class="popup_category" href="#">Travel</a>
-                        </div>
-                    </td>
-                    <td class="article_second">
-                        <input id="article_title" class="article_title" type="text" placeholder="Title">
-                        <input id="article_location" class="article_location" type="text" placeholder="Write a location">
-                        <textarea id="article_text" class="article_text" placeholder="Write something"></textarea>
-                    </td>
-                    <td class="article_third">
-                        <a class="article_help" href="#">Help</a>
-                        <button class="article_send" href="#">SEND</button>
-                    </td>
-                </tr>
-            </table>
+            <form:form modelAttribute="articleForm" method="POST" action="send_article_data" enctype="multipart/form-data">
+                <table>
+                    <tr>
+                        <td class="article_first">
+                            <fieldset class="article_image_content">
+                                <div>
+                                    <div class="upload_file_container">
+                                        <a href="#" id="load_picture" class="picture_frame">
+                                            <img id="article_image" src="images/article_image.png"/>
+                                        </a>
+                                        <form:input path="articlePicture" type="file" class="hide"/>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <a href="javascript:expandCategories('.choose_category_article_popup')" class="choose_category_article_popup">Choose a category</a>
+                            <div id="popup_categories" class="popup_categories">
+                                <a id="p-world" class="popup_category" href="javascript:changeBorderColor('#FF9933')">World</a>
+                                <a id="p-war" class="popup_category" href="javascript:changeBorderColor('#CC0000')">War</a>
+                                <a id="p-politics" class="popup_category" href="javascript:changeBorderColor('#336699')">Politics</a>
+                                <a id="p-business" class="popup_category" href="javascript:changeBorderColor('#FFCC00')">Business</a>
+                                <a id="p-science" class="popup_category" href="javascript:changeBorderColor('#336633')">Science</a>
+                                <a id="p-environment" class="popup_category" href="javascript:changeBorderColor('#669933')">Environment</a>
+                                <a id="p-sport" class="popup_category" href="javascript:changeBorderColor('#FF99CC')">Sport</a>
+                                <a id="p-entertainment" class="popup_category" href="javascript:changeBorderColor('#990099')">Entertainment</a>
+                                <a id="p-culture" class="popup_category" href="javascript:changeBorderColor('#663300')">Culture</a>
+                                <a id="p-travel" class="popup_category" href="javascript:changeBorderColor('#3399CC')">Travel</a>
+                            </div>
+                        </td>
+                        <td class="article_second">
+                            <form:input path="articleTitle" class="article_title" type="text" placeholder="Title"/>
+                            <form:input path="articleLocation" class="article_location" type="text" placeholder="Write a location"/>
+                            <form:textarea path="articleText" class="article_text" placeholder="Write something"/>
+                        </td>
+                        <td class="article_third">
+                            <a class="article_help" href="#">Help</a>
+                            <form:button class="article_send">SEND</form:button>
+                        </td>
+                    </tr>
+                </table>
+            </form:form>
         </div>
     </div>
     <%--/popups--%>

@@ -26,14 +26,28 @@
     border: 1px solid #E9E9E9;
 }
 
-.picture_frame {
+.article_first {
+    width: 200px;
+}
+
+.article_image_content {
+    z-index: 1000;
+    position: absolute;
+    height: 198px;
+    width: 198px;
+    border: none;
+    padding: 0;
+}
+
+#article_image {
+    border: none;
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
     border-radius: 100px;
     border: 3px solid #666666;
-    background: #929292 url(/images/article_image.png) no-repeat;
-    padding-left: 190px;
-    padding-bottom: 175px;
+    background: #929292;
+    width: 198px;
+    height: 198px;
 }
 
 .choose_category_article_popup {
@@ -42,10 +56,18 @@
     letter-spacing : -0.84px;
     color : #999999;
     text-decoration: none;
-    background: url(/images/arrow.png) no-repeat 115px;
-    margin-top: 200px;
+    background: url(../images/arrow_up.png) no-repeat 115px;
+    margin-top: 225px;
     margin-left: 35px;
     display: block;
+}
+
+.choose_category_article_popup.expanded {
+    background: url(../images/arrow_up.png) no-repeat 115px;
+}
+
+.choose_category_article_popup.collapsed {
+    background: url(../images/arrow_down.png) no-repeat 115px;
 }
 
 .popup_categories {
@@ -65,43 +87,43 @@
 }
 
 #p-world {
-    background: url(/images/world_tiny.png) no-repeat;
+    background: url(../images/world_tiny.png) no-repeat;
 }
 
 #p-war {
-    background: url(/images/war_tiny.png) no-repeat;
+    background: url(../images/war_tiny.png) no-repeat;
 }
 
 #p-politics {
-    background: url(/images/politics_tiny.png) no-repeat;
+    background: url(../images/politics_tiny.png) no-repeat;
 }
 
 #p-business {
-    background: url(/images/business_tiny.png) no-repeat;
+    background: url(../images/business_tiny.png) no-repeat;
 }
 
 #p-science {
-    background: url(/images/science_tiny.png) no-repeat;
+    background: url(../images/science_tiny.png) no-repeat;
 }
 
 #p-environment {
-    background: url(/images/environment_tiny.png) no-repeat;
+    background: url(../images/environment_tiny.png) no-repeat;
 }
 
 #p-sport {
-    background: url(/images/sport_tiny.png) no-repeat;
+    background: url(../images/sport_tiny.png) no-repeat;
 }
 
 #p-entertainment {
-    background: url(/images/entertainment_tiny.png) no-repeat;
+    background: url(../images/entertainment_tiny.png) no-repeat;
 }
 
 #p-culture {
-    background: url(/images/culture_tiny.png) no-repeat;
+    background: url(../images/culture_tiny.png) no-repeat;
 }
 
 #p-travel {
-    background: url(/images/travel_tiny.png) no-repeat;
+    background: url(../images/travel_tiny.png) no-repeat;
 }
 
 .article_title {
@@ -114,6 +136,11 @@
     position: absolute;
     top: 20px;
     margin-left: 25px;
+    width: 540px;
+}
+
+.article_title:focus {
+    outline: none;
 }
 
 .article_location {
@@ -126,6 +153,11 @@
     position: absolute;
     top: 110px;
     margin-left: 25px;
+    width: 540px;
+}
+
+.article_location:focus {
+    outline: none;
 }
 
 .article_text {
@@ -140,6 +172,10 @@
     margin-left: 25px;
     height: 400px;
     width: 540px;
+}
+
+.article_text:focus {
+    outline: none;
 }
 
 .article_third {
@@ -178,3 +214,8 @@
     position: absolute;
     top: 490px;
 }
+
+.hide {
+    display: none;
+}
+
